@@ -1,0 +1,134 @@
+= 🚀 RESTful API Documentation
+:doctype: book
+:icon: font
+:source-highlighter: highlight.js
+:toc: left
+:toclevels: 4
+:sectlinks:
+:operation-curl-request-title: 🚀 Example Request
+:operation-http-response-title: ✅ Example Response
+
+== 🌟 Overview
+본 문서는 **ATM 및 부스 관련 RESTful API**를 설명합니다. 각 API 엔드포인트는 요청 및 응답 예시와 함께 제공됩니다.
+
+[[machines]]
+= 🏧 ATM API
+
+[[machines_getMachines]]
+== 📋 전체 ATM 목록 조회
+
+전체 ATM 목록을 조회하는 API입니다.
+
+🔹 **Example Request**
+include::{snippets}/machines/curl-request.adoc[]
+
+🔹 **요청**
+include::{snippets}/machines/http-request.adoc[]
+
+🔹 **Example Response**
+include::{snippets}/machines/http-response.adoc[]
+
+🔹 **응답 결과**
+include::{snippets}/machines/response-body.adoc[]
+
+---
+
+[[machines_getProductYearMachines]]
+== 📅 생산 연도별 ATM 조회
+
+특정 **생산 연도**의 ATM을 조회하는 API입니다.
+
+🔹 **Example Request**
+include::{snippets}/findByProductYear/curl-request.adoc[]
+
+🔹 **요청**
+include::{snippets}/findByProductYear/http-request.adoc[]
+
+🔹 **Example Response**
+include::{snippets}/findByProductYear/http-response.adoc[]
+
+🔹 **응답 결과**
+include::{snippets}/findByProductYear/response-body.adoc[]
+
+---
+
+[[machines_newMachines]]
+== ➕ 새로운 ATM 등록
+
+새로운 ATM을 **추가**하는 API입니다.
+
+🔹 **Example Request**
+include::{snippets}/create-machine/curl-request.adoc[]
+
+🔹 **요청**
+include::{snippets}/create-machine/http-request.adoc[]
+
+🔹 **Example Response**
+include::{snippets}/create-machine/http-response.adoc[]
+
+🔹 **응답 결과**
+include::{snippets}/create-machine/response-body.adoc[]
+
+---
+
+[[machines_delIdMachines]]
+== 🗑️ ATM 삭제 (ID 기준)
+
+ID를 통해 특정 ATM을 **삭제**하는 API입니다.
+
+🔹 **Example Request**
+include::{snippets}/delete-machine/curl-request.adoc[]
+
+🔹 **요청**
+include::{snippets}/delete-machine/http-request.adoc[]
+
+🔹 **Example Response**
+include::{snippets}/delete-machine/http-response.adoc[]
+
+🔹 **응답 결과**
+include::{snippets}/delete-machine/response-body.adoc[]
+
+---
+
+[[Booth]]
+= 🎪 부스 API
+
+[[Booth_getBooth]]
+== 🔍 부스 정보 조회
+
+특정 **부스 정보**를 조회하는 API입니다.
+
+🔹 **Example Request**
+include::{snippets}/findByBooth/curl-request.adoc[]
+
+🔹 **요청**
+include::{snippets}/findByBooth/http-request.adoc[]
+
+🔹 **Example Response**
+include::{snippets}/findByBooth/http-response.adoc[]
+
+🔹 **응답 결과**
+include::{snippets}/findByBooth/response-body.adoc[]
+
+---
+
+[[Booth_updateBooth]]
+== 🔄 부스 정보 업데이트
+
+ATM에서 사용 가능한 **부스 정보를 변경**하는 API입니다.
+
+🔹 **Example Request**
+include::{snippets}/machine-booth-update/curl-request.adoc[]
+
+🔹 **요청**
+include::{snippets}/machine-booth-update/http-request.adoc[]
+
+🔹 **Example Response**
+include::{snippets}/machine-booth-update/http-response.adoc[]
+
+🔹 **응답 결과**
+include::{snippets}/machine-booth-update/response-body.adoc[]
+
+---
+
+🚀 **API를 활용하여 편리한 ATM 및 부스 관리를 경험하세요!** 🎯
